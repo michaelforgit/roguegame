@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="roguegame"
-run/main_scene="res://src/scenes/Main.tscn"
-config/features=PackedStringArray("4.2", "C#", "Mobile")
+run/main_scene="res://src/scenes/Game.tscn"
+config/features=PackedStringArray("4.0", "C#", "Mobile")
 config/icon="res://icon.png"
 
 [dotnet]
