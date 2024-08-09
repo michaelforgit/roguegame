@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://btrhopbd2vac8"]
 
-[ext_resource type="Script" path="res://src/scripts/Entity.cs" id="1_mjdgl"]
+[ext_resource type="Script" path="res://src/entity/Entity.cs" id="1_mjdgl"]
 [ext_resource type="Texture2D" uid="uid://dqg31g0pn6jk0" path="res://assets/Wizzard/Run/Run-Sheet.png" id="2_rtc04"]
 
 [sub_resource type="Animation" id="Animation_m806h"]

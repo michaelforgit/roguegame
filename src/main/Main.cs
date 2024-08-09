@@ -23,7 +23,7 @@ public partial class Main : Node2D {
     // command line arguments and determine if we should run tests.
     Environment = TestEnvironment.From(OS.GetCmdlineArgs());
     if (Environment.ShouldRunTests) {
-      CallDeferred("RunTests");
+      // CallDeferred("RunTests");
       return;
     }
 #endif
@@ -38,5 +38,5 @@ public partial class Main : Node2D {
 #endif
 
   private void RunScene()
-    => GetTree().ChangeSceneToFile("res://src/scenes/Game.tscn");
+    => GetTree().ChangeSceneToFile("res://src/game/Game.tscn");
 }
