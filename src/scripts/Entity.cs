@@ -1,7 +1,7 @@
 namespace roguegame;
 
 using Godot;
-using scripts;
+using System;
 
 public partial class Entity : CharacterBody2D {
 
