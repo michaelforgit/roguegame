@@ -13,10 +13,11 @@ public partial class DefaultWeapon : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+    shoot(new Vector2(0,0));
 	}
 
   public void shoot(Vector2 origin)
   {
-    Events.Instance.EmitSignal(nameof(Events.SpawnEventHandler), origin);
+    Events.Instance.EmitSignal(Events.SignalName.Spawn, origin);
   }
 }
