@@ -1,3 +1,5 @@
+namespace roguegame;
+
 using Godot;
 using System;
 
