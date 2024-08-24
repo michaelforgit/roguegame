@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://src/playableEntity/PlayableEntity.cs" id="1_s7ku7"]
 [ext_resource type="Texture2D" uid="uid://dqg31g0pn6jk0" path="res://assets/Wizzard/Run/Run-Sheet.png" id="2_xb0yx"]
 [ext_resource type="PackedScene" uid="uid://bfloxlv0qsr0f" path="res://src/inputManager/InputManager.tscn" id="3_epise"]
-[ext_resource type="PackedScene" uid="uid://brohkgplhjxgf" path="res://src/weapons/defaultWeapon/DefaultWeapon.tscn" id="4_k3v3e"]
+[ext_resource type="Script" path="res://src/weapons/defaultWeapon/DefaultWeapon.cs" id="4_a6tgm"]
 
 [sub_resource type="Animation" id="Animation_m806h"]
 length = 0.001
@@ -88,4 +88,5 @@ shape = SubResource("CapsuleShape2D_tsnjy")
 
 [node name="InputManager" parent="." instance=ExtResource("3_epise")]
 
-[node name="DefaultWeapon" parent="." instance=ExtResource("4_k3v3e")]
+[node name="DefaultWeapon" type="Node2D" parent="."]
+script = ExtResource("4_a6tgm")

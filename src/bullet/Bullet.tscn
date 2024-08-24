@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxw7q2orbp2k8"]
+
+[ext_resource type="Script" path="res://src/bullet/Bullet.cs" id="1_l810k"]
+[ext_resource type="Texture2D" uid="uid://bp24vgrrlk223" path="res://assets/Weapons/Bone.png" id="2_ewvge"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ps6ep"]
+radius = 7.0
+
+[node name="Bullet" type="Area2D"]
+script = ExtResource("1_l810k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ewvge")
+region_enabled = true
+region_rect = Rect2(128, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ps6ep")
